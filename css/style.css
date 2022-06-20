@@ -138,10 +138,10 @@ body {
   .conteudo,
   .conteudo-principal,
   .conteudo-principal-escrito {
-    flex-wrap: wrap;
-  }
-  .conteudo-principal-escrito {
     flex-direction: column;
+    width: 100%;
+    text-align: center;
+    align-items: center;
   }
 }
 
@@ -159,7 +159,7 @@ body {
   .menu {
     display: block;
     position: absolute;
-    width: 30%;
+    width: 35%;
     top: 80px;
     right: 20px;
     background: linear-gradient(68.15deg, #0783b8 16.62%, #97c5e9 85.61%);
