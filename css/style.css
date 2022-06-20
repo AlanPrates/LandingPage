@@ -61,7 +61,7 @@ body {
   width: 200px;
   height: 70px;
   border: none;
-  box-shadow: 8px 7px 6px rgb(0, 0, 0, 0.25);
+  box-shadow: 5px 4px 3px rgb(0, 0, 0, 0.25);
   border-radius: 20px;
   font-family: "Sarala", sans-serif;
   font-weight: 400;
@@ -70,9 +70,23 @@ body {
   cursor: pointer;
 }
 .conteudo-escrito-botao:hover {
-  background-color: #000;
+  background-color: #000000;
   color: #fff2e7;
-  box-shadow: 6px 5px 4px rgb(255, 242, 231);
+  box-shadow: 5px 4px 3px rgb(255, 242, 231);
+}
+
+.tecnologia,
+.conteudo-principal-tecnologia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  height: 40px;
+}
+h2 {
+  display: flex;
+  gap: 20px;
+  height: 40px;
 }
 .conteudo-principal-imagem {
   height: 350px;
@@ -117,7 +131,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   background: linear-gradient(68.15deg, #0783b8 16.62%, #97c5e9 85.61%);
-  color: #2d2c2b;
+  color: #fff2e7;
 }
 .rodape {
   padding: 32;
@@ -137,7 +151,9 @@ body {
 @media (max-width: 920px) {
   .conteudo,
   .conteudo-principal,
-  .conteudo-principal-escrito {
+  .conteudo-principal-escrito,
+  .tecnologia {
+    margin-top: 90px;
     flex-direction: column;
     width: 100%;
     text-align: center;
@@ -159,9 +175,9 @@ body {
   .menu {
     display: block;
     position: absolute;
-    width: 35%;
+    width: 40%;
     top: 80px;
-    right: 20px;
+    right: 0px;
     background: linear-gradient(68.15deg, #0783b8 16.62%, #97c5e9 85.61%);
 
     transition: 0.6s;
@@ -171,7 +187,7 @@ body {
     overflow-y: hidden;
   }
   #nav.active .menu {
-    height: calc(72vh - 70px);
+    height: calc(50vh - 70px);
     visibility: visible;
     overflow-y: auto;
   }
